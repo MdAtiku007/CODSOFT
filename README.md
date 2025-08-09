@@ -75,6 +75,14 @@ Mode: Virtual
 
 Hashtag: #VirtualInternship
 
+## 🚀 Live Demo  
+[Portfolio](https://your-live-link.com)
+ 
+[Landing Page](https://your-live-link.com)
+
+[Calculator web App](https://your-live-link.com)
+
+
 # 📸 Screenshots
 Screenshots of each project are available inside their respective folders (if provided).
 
