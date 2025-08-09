@@ -84,7 +84,7 @@ Hashtag: #VirtualInternship
 
 
 # 📸 Screenshots
-Screenshots of each project are available inside their respective folders (if provided).
+Screenshots of each project are available inside their respective folders .
 
 # 🙌 Acknowledgements
 Special thanks to CODSOFT for the opportunity and guidance throughout the internship. This experience helped me strengthen my web development fundamentals and apply them in practical projects.
