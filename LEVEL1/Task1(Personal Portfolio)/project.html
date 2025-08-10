@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects | MOHAMMED ATIKU RAHMAN</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- 🔄 Preloader -->
+  <div id="preloader"><div class="loader"></div></div>
+
+  <!-- 🌗 Dark Mode Toggle -->
+  <button class="toggle-theme" onclick="toggleTheme()">🌗</button>
+
+  <header>
+    <h1>Projects</h1>
+    <p>What I've Built.</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section>
+    <div class="project visible">
+      <h3>🎮 Hunger Snake</h3>
+      <p>A classic snake game built using Python (Pygame). The goal is to collect food to grow the snake while avoiding collisions with the wall or itself. This was one of my first interactive projects and helped me grasp game loops, key event handling, and real-time rendering.</p>
+    </div>
+
+    <div class="project visible">
+      <h3>🗣️ Voice Command Calculator</h3>
+      <p>A voice-controlled calculator that uses Python's SpeechRecognition and Pyttsx3 libraries. You can speak out arithmetic expressions and get instant voice responses. It introduced me to speech APIs and audio processing in Python, making it an exciting challenge in human-computer interaction.</p>
+    </div>
+
+    <div class="project visible">
+      <h3>🌐 MeetMate</h3>
+      <p>A simple social media mock-up using HTML, CSS, and JavaScript. Users can post updates and browse shared content. This project was a great exercise in DOM manipulation, responsive layout design, and user interaction logic using vanilla JS.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 MOHAMMED ATIKU RAHMAN</p>
+  </footer>
+
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle('dark-mode');
+      localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light');
+    }
+
+    if (localStorage.getItem('theme') === 'dark') {
+      document.body.classList.add('dark-mode');
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('section, .project').forEach(el => el.classList.add('visible'));
+    });
+
+    window.addEventListener("load", function () {
+      const preloader = document.getElementById("preloader");
+      preloader.style.opacity = "0";
+      setTimeout(() => preloader.style.display = "none", 500);
+    });
+  </script>
+</body>
+</html>

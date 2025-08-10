@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | MOHAMMED ATIKU RAHMAN</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <!-- 🔄 Preloader -->
+  <div id="preloader"><div class="loader"></div></div>
+
+  <!-- 🌗 Dark Mode Toggle -->
+  <button class="toggle-theme" onclick="toggleTheme()">🌗</button>
+
+  <header>
+    <h1>Contact Me</h1>
+    <p>Let's connect and build something great together.</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section>
+    <h2>Get in Touch</h2>
+
+    <!-- ✅ Replace "your-id-here" with your Formspree form ID -->
+    <form action="https://formspree.io/f/your-id-here" method="POST">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Your Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+
+    <hr />
+
+    <div class="social-links">
+      <a href="https://github.com/MdAtiku007" target="_blank" aria-label="GitHub">
+        <i class="fab fa-github fa-2x"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/atiku-rahman-11239a331" target="_blank" aria-label="LinkedIn">
+        <i class="fab fa-linkedin fa-2x"></i>
+      </a>
+    </div>
+
+
+  </section>
+
+  <footer>
+    <p>&copy; 2025 MOHAMMED ATIKU RAHMAN</p>
+  </footer>
+
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle('dark-mode');
+      localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light');
+    }
+
+    if (localStorage.getItem('theme') === 'dark') {
+      document.body.classList.add('dark-mode');
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('section').forEach(el => el.classList.add('visible'));
+    });
+
+    window.addEventListener("load", function () {
+      const preloader = document.getElementById("preloader");
+      preloader.style.opacity = "0";
+      setTimeout(() => preloader.style.display = "none", 500);
+    });
+  </script>
+</body>
+</html>
