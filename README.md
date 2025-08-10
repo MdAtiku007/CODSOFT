@@ -90,7 +90,7 @@ Screenshots of each project are available inside their respective folders .
 Special thanks to CODSOFT for the opportunity and guidance throughout the internship. This experience helped me strengthen my web development fundamentals and apply them in practical projects.
 
 # 📬 Contact
-Mohammed Atiku Rahman
-[LinkedIn:- https://tinyurl.com/atikur-linkedin] 
+Md Atiku Rahman
+[LinkedIn:- https://www.linkedin.com/in/atiku-rahman-11239a331] 
 
 ⭐ Feel free to explore the projects, clone the repository, and provide feedback. Thank you for visiting!
