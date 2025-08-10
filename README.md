@@ -78,7 +78,7 @@ Hashtag: #VirtualInternship
 ## 🚀 Live Demo  
 [Portfolio](https://your-live-link.com)
  
-[Landing Page](https://your-live-link.com)
+[Landing Page](https://mdatiku007.github.io/Landing-page/)
 
 [Calculator web App](https://mdatiku007.github.io/Calculator-web-app/)
 
